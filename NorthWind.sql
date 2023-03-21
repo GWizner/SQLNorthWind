@@ -1,0 +1,37 @@
+--SELECT * FROM Customers;
+--SELECT Country from Customers;
+--SELECT * FROM Customers WHERE CustomerID LIKE 'BL%';
+--SELECT TOP (100) * FROM Orders;
+--SELECT * FROM Customers WHERE PostalCode IN ('1010','3012','12209','05023');
+--SELECT * FROM Orders WHERE ShipRegion IS NOT NULL;
+--INSERT INTO Customers (CustomerID, CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax)
+--VALUES ('GWZRD','GrnWzrd', 'Gregory Wizner', 'Owner', '555 Majik St.', 'Detroit','MI','48226','USA','(313)476-9973','(313)473-4679');
+--UPDATE Orders SET ShipRegion = 'EuroZone' WHERE ShipCountry = 'France'
+--DELETE FROM [Order Details] WHERE Quantity = 1;
+--SELECT * FROM Orders WHERE OrderID = 10290; 
+--SELECT * FROM Orders JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
+--SELECT FirstName FROM Employees WHERE ReportsTo IS NULL;
+--SELECT FirstName FROM Employees WHERE ReportsTo = 2;
+--SELECT FirstName FROM Employees WHERE ReportsTo = (SELECT EmployeeID FROM Employees WHERE FirstName = 'Andrew');
+
+--SELECT OrderID, AVG(Quantity) AS AvgQty, MAX(Quantity) AS MaxQty, MIN(Quantity) AS MinQty FROM [Order Details] GROUP BY OrderID;
+--SELECT AVG(Quantity) AS AvgQty, MAX(Quantity) AS MaxQty, MIN(Quantity) AS MinQty FROM [Order Details];
+--SELECT * FROM Customers WHERE City IN ('London','Paris');
+--SELECT * FROM Orders INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
+--SELECT * FROM Orders LEFT JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
+--SELECT * FROM Orders RIGHT JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
+--SELECT DISTINCT City FROM Customers WHERE City IS NOT NULL;
+--SELECT FirstName FROM Employees ORDER BY FirstName ASC;
+--SELECT OrderID, SUM(UnitPrice * Quantity) AS Total FROM [Order Details] GROUP BY OrderID;
+--SELECT * FROM Employees WHERE HireDate BETWEEN '1994-01-01' AND GETDATE();
+--SELECT EmployeeID, DATEDIFF(YEAR, HireDate, GETDATE()) AS YrsWorked FROM Employees;
+--SELECT * FROM Products ORDER BY UnitsInStock ASC;
+--SELECT * FROM Products ORDER BY UnitsInStock DESC;
+--SELECT * FROM Products WHERE UnitsInStock < 6;
+--SELECT * FROM Products WHERE Discontinued = 1;
+--SELECT * FROM Products WHERE 
+--SELECT * FROM Products WHERE ProductName LIKE '%Tofu%';
+--SELECT MAX(UnitPrice) AS MostExpensive FROM Products;
+--SELECT * FROM Employees WHERE HireDate > '1993-01-01';
+--SELECT * FROM Employees WHERE TitleOfCourtesy IN ('Ms.','Mrs.');
+--SELECT * FROM Employees WHERE HomePhone LIKE '(206)%';
